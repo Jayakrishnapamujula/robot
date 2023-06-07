@@ -1,0 +1,300 @@
+body{
+    background-color:black;
+}
+.robo{
+    border: 1px solid red;
+    margin-top: 2%;
+    height: 600px;
+    box-shadow:1px 1px 10px 10px   rgb(247, 30, 30);
+
+}
+h2{
+    color: white;
+    box-shadow:1px 1px 10px 10px   rgb(58, 165, 200);
+}
+.head{
+    width: 150px;
+    height: 150px;
+    background-color:white;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    margin:auto;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    box-shadow:1px 1px 10px 10px   rgb(58, 165, 200);
+    transition: transform 1s ease;
+}
+.robo:hover .head{
+    width:200px;
+    animation:movehead 5s infinite ;
+}
+@keyframes movehead{
+    0%{
+        width:150px;
+    }
+    25%{
+        width: 170px;
+    }
+    50%{
+        width: 150px;
+    }
+    75%{
+        width: 170px;
+    }
+    100%{
+        width: 150px;
+    }
+}
+
+.eyes{
+    display: flex;
+    width:150px;
+    position: absolute;
+    margin-top: 50%;
+    justify-content: space-evenly;
+}
+
+
+.eye1{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow:5px 5px 7px 7px   rgb(58, 165, 200);
+    transition: transform 1s ease;
+}
+.robo:hover .eye1{
+    transform: translateX(-20px);
+    animation: moveeye1 5s infinite;
+}
+@keyframes moveeye1{
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(-20px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+.eye2{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow:5px 5px 7px 7px  rgb(58, 165, 200);
+    transition: transform 1s ease;
+}
+.robo:hover .eye2{
+    transform: translateX(30px);
+    animation: moveeye2 5s infinite;
+}
+@keyframes moveeye2{
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(30px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+
+.hand1
+{
+    width: 30px;
+    height: 100px;
+    background-color:white;
+    border-radius: 100px;
+    margin-top: 7%;
+    box-shadow:1px 1px 10px 10px   rgb(58, 165, 200);
+    transition: transform 1s ease;
+}
+.robo:hover .hand1{
+    transform: rotate(360deg);  
+    transform-origin: top;
+    animation: movehand1 5s infinite; 
+}
+@keyframes movehand1{
+    0%{
+        transform: rotate(0deg);  
+    }
+    25%{
+        transform: rotate(360deg);  
+    }
+    50%{
+        transform: rotate(0deg);  
+    }
+    75%{
+        transform: rotate(360deg);  
+    }
+    100%{
+        transform: rotate(0deg);  
+    }
+
+}
+
+
+.center{
+    height: 180px;
+    width: 150px;
+    background-color:white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow:1px 1px 10px 10px   rgb(58, 165, 200);
+    margin-top: 5%;
+    transition: transform 1s ease;
+    
+}
+
+.robo:hover .center{
+    transform: rotate(360deg);  
+    animation: movecenter 1s infinite; 
+    height: 150px;
+    width: 150px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+@keyframes movecenter{
+   from{
+    transform: rotate(0deg);
+   }
+   to{
+    transform: rotate(360deg);
+   }
+
+}
+.hand2
+{
+    width: 30px;
+    height: 100px;
+    background-color:white;
+    border-radius: 100px;
+    margin-top: 7%;
+    box-shadow:1px 1px 10px 10px   rgb(58, 165, 200);
+    transition: transform 1s ease;
+}
+.robo:hover .hand2{
+    transform: rotate(-360deg);  
+    transform-origin: top;
+    animation: movehand2 5s infinite; 
+}
+@keyframes movehand2{
+    0%{
+        transform: rotate(0deg);  
+    }
+    25%{
+        transform: rotate(-360deg);  
+    }
+    50%{
+        transform: rotate(0deg);  
+    }
+    75%{
+        transform: rotate(-360deg);  
+    }
+    100%{
+        transform: rotate(0deg);  
+    }
+
+}
+
+.body
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 350px;
+}
+
+.leg1
+{
+    width: 30px;
+    height: 100px;
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow:0px 10px 5px   rgb(58, 165, 200);
+    transition: transform 1s ease;
+}
+.robo:hover .leg1{
+     transform: rotate(45deg);
+     transform-origin: top;
+     animation: moveleg1 5s infinite;
+}
+@keyframes moveleg1{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.leg2
+{
+    width: 30px;
+    height: 100px;
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow:0px 10px 5px   rgb(58, 165, 200);
+    transition: transform 1s ease;
+}
+.robo:hover .leg2{
+    transform: rotate(45deg);
+    transform-origin: top;
+    animation: moveleg2 5s infinite;
+}
+@keyframes moveleg2{
+   0%{
+       transform: rotate(0deg);
+   }
+   25%{
+       transform: rotate(-45deg);
+   }
+   50%{
+       transform: rotate(0deg);
+   }
+   75%{
+       transform: rotate(-45deg);
+   }
+   100%{
+       transform: rotate(0deg);
+   }
+}
+
+.legs{
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+    margin: auto;
+    margin-top: -15px;
+}
